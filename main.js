@@ -124,6 +124,9 @@ var myResume =`# 樊凯强
 同时期间曾多次出差，代表公司前往甲方了解需求并协助给出解决，了解了整
 个项目运作的过程。
 
+## 联系方式
+邮箱：1574989439@qq.com
+
 ## 个人主页
 博客链接：http://franko.top/
 
@@ -172,6 +175,10 @@ html {
     color:white;
 
 }
+
+/*好了，我的动态简历做好了*/
+
+/*觉得好的就给我点个赞吧！*/
 `
 writeCode('',result,()=>{
     writeMarkdown(myResume,()=>{
