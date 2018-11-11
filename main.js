@@ -10,7 +10,7 @@ function writeCode(oldCode,newCode,fn){
             window.clearInterval(id)
             fn()
         }
-    },25)
+    },30)
 }
 
 function writeMarkdown(resume,fn){
@@ -22,9 +22,10 @@ function writeMarkdown(resume,fn){
         domResume.scrollTop=10000
         if(n>=resume.length){
             window.clearInterval(id2)
+            domResume.scrollTop=0
             fn()
         }
-    },25)
+    },30)
 }
 var result=`/* 马上就要找工作了 */
 
@@ -37,7 +38,7 @@ var result=`/* 马上就要找工作了 */
 * {
     margin: 0;
     padding: 0;
-    transition: all 0.5s;
+    transition: all 2s;
 }
 
 /* 再来个代码框 */
@@ -90,6 +91,7 @@ body {
     background: white;
     right: 0;
     margin: 20px;
+    padding:20px;
     width: 45%;
     height: 95vh;
     overflow: scroll;
@@ -145,7 +147,6 @@ var result2=`/* 好了，这个简历是用Markdown语法写的 */
 
 #resume{
     font-family: 楷体;
-    padding:20px
 }
 #resume>p{
     padding:5px 20px;
@@ -167,8 +168,8 @@ html {
 /*即将大功告成了，加个标题吧*/
 .resumeWrapper::before{
     position: fixed;
-    top:575px;
-    left:575px;
+    top:580px;
+    left:580px;
     content:'樊凯强的简历';
     font-size:32px;
     font-family:楷体;
